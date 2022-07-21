@@ -1,0 +1,169 @@
+@media screen and (min-width: 1200px){
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+    
+
+@media screen and (max-width:1199px) {
+    .navformat img {
+        height: 40px;
+    } 
+    .nav-item {
+        margin-right: 10px;
+    }
+    .footer-icons ul li a {
+        margin-right: 0px;
+    }
+    .footer-icons p {
+        font-size: 13px;
+    }
+    .round-corner {
+        width: 100%;
+    }
+    .custom-width-1 {
+        width: 100%;
+    }
+    .visionmission img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .sub-header .left-content p {
+        font-size: 12px;
+    }
+    .navformat {
+        height: auto;
+    }
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .navformat .nav-item .nav-link {
+        font-size: 18px;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+        margin-left: 40px;
+        width: 100%;
+    }
+    .navformat .dropdown-menu .submenu {
+        display: none;
+    }
+    .navformat .dropdown-menu {
+        width: 96%;
+    }
+    .navformat .dropdown-menu .submenu {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .video-item iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .video-item .down-content h4 {
+        margin-bottom: 0px;
+    }
+    .footer {
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    .footer-header {
+        padding-top: 0px;
+    }
+    .footer-body .fa-angle-double-right:before  {
+        content: none;
+    }
+    .footer-body {
+        padding-top: 5px;
+    }
+    .banner-title {
+        height: auto;
+        font-size: 17px;
+    }
+    .carousel-caption {
+        bottom: 0px;
+    }
+    .custom-width {
+        width: 100%;
+    }
+    .round-corner {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .visionmission img {
+        width: 50%;
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .copyright p {
+        font-size: 10px;
+    }
+    .sub-header .left-content p {
+        text-align: center;
+      }
+      .round-corner {
+        width: 100%;
+    }
+    .visionmission img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .navformat .nav-item .nav-link {
+        font-size: 16px;
+    }
+    .nav-item {
+        margin-bottom: 0px;
+    }
+    .navformat .dropdown-menu {
+        width: 90%;
+    }
+    /* .welcome {
+        padding-top: 0px;
+    } */
+    .welcome h4 {
+        padding-top: 10px;
+    }
+    .welcome h2 {
+        font-size: 15px;
+    }
+    .welcome p {
+        font-size: 14px;
+    }
+    .snapshot {
+        padding-top: 20px;
+    }
+    .hrcenter {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 200px;
+    }
+    .snapshot h2 {
+        padding-bottom: 0px;
+        font-size: 16px;
+    }    
+    .snapshot p {
+        font-size: 14px;
+    }
+    .awareness h2 {
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    .awareness p {
+        font-size: 14px;
+    }
+    .video-item iframe {
+        height: auto;
+    }
+    .video-item .down-content p {
+        text-align: start;
+    }
+}

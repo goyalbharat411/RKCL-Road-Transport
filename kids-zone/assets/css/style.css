@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* 
+---------------------------------------------
+Global Style
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption 
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body
+{
+  overflow-x: hidden;
+}
+
+.banner-title
+{
+  color:#ffffff;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+a 
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #e1e81e;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  background-image: url("../images/background.jpg");
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h4maroon
+{
+  color: #930000;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.h2purple
+{
+  color: #bb66ff;
+  padding-bottom: 10px;
+}
+
+.h2brown
+{
+  color: #bf6d09;
+  padding-bottom: 10px;
+}
+
+.h2green
+{
+  color: #75b612;
+  padding-bottom: 10px;
+}
+
+.grayback
+{
+  background: #f7f7f7;
+}
+
+.round-corner
+{
+  border-radius: 20px;
+}
+
+.iframe-item 
+{
+  margin: auto;
+  display:block;
+}
+
+::selection {
+  background: #6495ed;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #f5a425;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+/* 
+---------------------------------------------
+Sub Header
+--------------------------------------------- 
+*/
+.sub-header {
+  
+  background-color:#fc6681;
+  position: relative;
+  z-index: 0;
+  height: 45px
+}
+.sub-header a{
+  color: #ffffff;  
+  font-size: 14px;
+  transition: all .3s;
+}
+
+.sub-header a:hover {  
+  color: #143263;
+}
+
+.sub-header .left-content p {
+  color: #ffffff;
+  padding: 10px 0px;
+  font-size: 14px;
+}
+
+.sub-header .right-icons {
+  text-align: right;
+  padding: 6px 0px;  
+}
+.sub-header .right-icons p{
+  color: #ffffff;
+  
+}
+
+.sub-header .right-icons ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+
+.sub-header .left-content p em {
+   font-style: normal;
+   color: #f5a425;
+}
+
+/* 
+---------------------------------------------
+Navbar
+--------------------------------------------- 
+*/
+.navstyle
+{
+  background-color: #ffffff;
+  font-size: 16px; 
+  height: 80px;
+}
+
+.navstyle a:hover
+{
+  color: #6495ed;
+
+}
+
+.nav-item
+{
+  margin-right: 10px;
+}
+
+
+/* 
+---------------------------------------------
+Carousel
+--------------------------------------------- 
+
+.carousel
+{
+  background-color:#143263;
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+*/
+
+/* 
+---------------------------------------------
+Section Break
+--------------------------------------------- 
+*/
+.section-break
+{
+  margin-top: 20px;
+  border-radius: 30px;  
+}
+
+/* 
+---------------------------------------------
+Welcome Section
+--------------------------------------------- 
+*/
+
+.welcome
+{
+  padding-top:0px;
+  padding-bottom:10px;
+}
+
+.welcome p
+{
+  color: #272727;  
+  font-size: 16px;
+  text-align: left;
+  line-height: 2.0;
+}
+
+
+/* 
+---------------------------------------------
+Snapshot Section
+--------------------------------------------- 
+*/
+.snapshot p
+{
+    color: #ffffff;  
+    font-size: 16px;
+    text-align: justify;
+}
+
+.count-area-content {
+  text-align: center;
+  background-color:#f7f7f7;
+  border-radius: 20px;
+  border: solid 0px #cecece;
+  padding: 25px 30px 35px 30px;
+  margin: 15px 0px;
+}
+
+.count-digit {
+    margin: 5px 0px;
+    color: #FC3;
+    font-weight: 700;
+    font-size: 36px;
+}
+.count-title {
+    padding-top: 30px;  
+    font-size: 22px;
+    font-weight: 700;
+    color: #a686d1;
+    letter-spacing: 0.5px;
+}
+
+
+/* 
+---------------------------------------------
+Videos Section
+--------------------------------------------- 
+*/
+.videos p
+{
+  color: #ffffff;  
+  font-size: 16px;
+  text-align: justify;
+}
+.video-item 
+{
+  margin-bottom: 30px;
+  border: solid 1px #FC3;
+  border-radius: 20px;
+}
+.video-item iframe
+{
+  padding-top: 5px;
+  margin: auto;
+  display:block;
+  
+}
+.video-item .down-content {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.video-item .down-content h4 {
+  font-size: 18px;
+  color: #FC3;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.video-item .down-content p {
+  
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.videos
+{
+  margin-bottom: 20px;
+}
+
+/*
+---------------------------------------------
+Footer Section
+---------------------------------------------
+*/
+
+.footer
+{
+  
+  background-image: url("../images/bar.png");
+  background-repeat: no-repeat;
+  background-color: #0798f5;
+  padding-top: 20px;
+}
+
+.footer-header
+{
+  color: #e1e81e;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+
+.footer-body
+{
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 13px; 
+}
+
+.footer-body a
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-body a:hover
+{
+  color: #e1e81e;
+}
+
+.footer-body h5
+{
+  font-size:14px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.footer-body p
+{
+  margin-bottom: 4px;
+}
+.footer-body li
+{
+  margin-bottom: 4px;
+}
+
+.footer-icons ul li a {
+ 
+  display: inline-block; 
+  margin-right: 10px;
+}
+
+.footer-icons h5 {
+ font-size: 18px;
+ padding-top: 00px; 
+}
+
+/*
+---------------------------------------------
+Copyright Section
+---------------------------------------------
+*/
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0px;
+  background-color: #ffffff;
+  
+}
+.copyright p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;  
+}
+
+/*
+
+---------------------------------------------
+Button
+--------------------------------------------- 
+*/
+
+
+.btn-pink
+{
+  text-align: center;
+  border-radius: 20px;  
+}
+
+.btn-pink a
+{
+  font-size: 14px;
+  color: #fff;
+  background-color: #143263;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s;
+  text-decoration:none;
+}
+
+.btn-pink a:hover
+{
+  background-color: #6495ed;
+  color: #ffffff;
+}
+
+/*
+---------------------------------------------
+Responsive
+--------------------------------------------- 
+*/
+
+@media (max-width: 1300px) {
+  .services .owl-nav .owl-next{
+    right: -30px;
+  }
+  .services .owl-nav .owl-prev{
+    left: -25px;
+  }
+  .our-courses .owl-nav .owl-next{
+    right: -30px;
+  }
+  .our-courses .owl-nav .owl-prev{
+    left: -25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services .owl-nav .owl-next{
+    right: -70px;
+  }
+  .services .owl-nav .owl-prev{
+    left: -65px;
+  }
+  .our-courses .owl-nav .owl-next{
+    right: -70px;
+  }
+  .our-courses .owl-nav .owl-prev{
+    left: -65px;
+  }
+}
+
+@media (max-width: 1085px) {
+  .services .owl-nav .owl-next{
+    right: -30px;
+  }
+  .services .owl-nav .owl-prev{
+    left: -25px;
+  }
+  .our-courses .owl-nav .owl-next{
+    right: -30px;
+  }
+  .our-courses .owl-nav .owl-prev{
+    left: -25px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .services .owl-nav .owl-next{
+    display: none;
+  }
+  .services .owl-nav .owl-prev{
+    display: none;
+  }
+  .our-courses .owl-nav .owl-next{
+    display: none;
+  }
+  .our-courses .owl-nav .owl-prev{
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .main-banner .caption {
+    top: 60%;
+  }
+
+  .main-banner .caption h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .main-banner .caption .main-button-red {
+    margin-top: 15px;
+  }
+
+  .services {
+    margin-top: 60px;
+  }
+
+  section.upcoming-meetings {
+    padding-top: 400px;
+  }
+
+  section.upcoming-meetings .categories {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .accordions {
+    margin-left: 0px;
+  }
+
+  .new-students {
+    margin-top: 15px;
+  }
+
+  section.our-facts .video {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  section.contact-us #contact {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .sub-header .left-content p {
+    display: none;
+  }
+
+  .sub-header .right-icons {
+    text-align: center;
+  }
+
+  .main-nav .nav .sub-menu {
+    display: none;
+  }
+
+  .header-area .main-nav .nav li ul.sub-menu li a {
+    color: #1f272b;
+  }
+
+}
+
+/* CSS For Sub Menu */
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+	.dropdown-menu li{
+		position: relative;
+	}
+	.dropdown-menu .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.dropdown-menu .submenu-left{ 
+		right:100%; left:auto;
+	}
+
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+
+.dropdown-menu .dropdown-menu{
+		margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+}
+
+}	
+/* ============ small devices .end// ============ */
