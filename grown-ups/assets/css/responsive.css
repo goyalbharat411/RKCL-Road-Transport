@@ -99,6 +99,7 @@
         display: block;
         margin: 15px auto;
     }
+    
 }
 
 @media screen and (max-width:767px) {
@@ -165,5 +166,11 @@
     }
     .video-item .down-content p {
         text-align: start;
+    }
+    .welcome .table {
+        width: 100% !important;
+    }
+    .welcome input, .welcome button {
+        width: 100% !important;
     }
 }
