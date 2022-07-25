@@ -450,7 +450,7 @@ Footer Section
 .footer
 {
   background-image: url("../images/footer-bg.jpg");
-  padding-top: 20px;  
+  padding-top: 35px;  
   margin-top: 20px;
  }
 
@@ -460,7 +460,7 @@ Footer Section
   font-weight: bold;
   color: #ecde12fa;
   padding-top: 5px;
-  padding-bottom: 5px;
+  font-size: 20px;
   margin-right: 10px;
 }
 
