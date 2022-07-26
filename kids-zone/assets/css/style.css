@@ -747,3 +747,26 @@ input[type="number"]::-webkit-outer-spin-button {
   top: 10px;
   right: 10px;
 }
+.card .card-header {
+  font-weight: 700;
+  font-size: 18px;
+}
+.card .card-text {
+  margin-bottom: 15px;
+}
+.color-plate {
+  margin: 15px auto;
+  display: block;
+}
+.color-list a {
+  color: #000;
+}
+.color-list img {
+  height: 100px;
+  display: block;
+  margin-bottom: 10px;
+}
+.welcome iframe {
+  margin: 20px auto;
+  display: block;
+}

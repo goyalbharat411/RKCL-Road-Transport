@@ -11,6 +11,12 @@
         width: 100%;
         height: auto;
     }
+    .iframe iframe {
+        width: 100%;
+    }
+    .color-plate {
+        width: 100%;
+    }
 }
     
 
@@ -49,12 +55,29 @@
     .footer-body .fa-angle-double-right:before  {
         content: none;
     }
+    .carousel-caption {
+        bottom: 0px;
+    }
+    .banner-title {
+        height: auto;
+        font-size: 17px;
+    }
+    .welcome iframe {
+        width: 100%;
+    }
+    .scramble {
+        width: 100%;
+    }
 }
     
 
 @media screen and (max-width:767px){
     .sub-header .left-content p {
         text-align: center;
+    }
+    .carousel-caption {
+        bottom: -5px;
+        display: block !important;
     }
 }
     
@@ -70,6 +93,23 @@
     .h4maroon {
         padding-top: 0px;
     }
+    .carousel-caption {
+        bottom: -13px;
+    }
+    .iframe iframe {
+        height: auto;
+    }
+    .color-list {
+        display: grid !important;
+    }
+    .color-list img {
+        display: initial;
+        margin-right: 10px;
+    }
+    .welcome iframe {
+       height: auto;
+       margin: 20px auto 0px;
+      }
 }
     
     

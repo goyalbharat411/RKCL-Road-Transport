@@ -115,6 +115,10 @@
     .visionmission img {
         width: 100%;
     }
+    .carousel-caption {
+        bottom: -5px;
+        display: block !important;
+    }
 }
 
 @media screen and (max-width:479px) {
@@ -172,5 +176,8 @@
     }
     .welcome input, .welcome button {
         width: 100% !important;
+    }
+    .carousel-caption {
+        bottom: -13px;
     }
 }
