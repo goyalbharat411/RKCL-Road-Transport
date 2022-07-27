@@ -9,27 +9,28 @@
   <meta name="author" content="RKCL">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" -->
 
-  <title>RKCL - Find the Mistakes</title>
+  <title>RKCL - Road Safety Web Portal</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-  <!-- Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
+    <!-- Modal -->
+  <div class="modal fade login-btn" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Login to Road Safety Portal</h5>
@@ -37,54 +38,35 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <a href="#">
-                <img src="assets/images/login-facebook.png" style="width: 250px; padding-bottom: 20px">
+              <a href="javascript:void(0)">
+                <img src="assets/images/login-facebook.png" />
               </a>
-            </div>
+              <a href="javascript:void(0)">
+                <img src="assets/images/login-google.png" />
+              </a>
           </div>
 
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <a href="#">
-                <img src="assets/images/login-google.png" style="width: 250px; padding-bottom: 20px">
-              </a>
-            </div>
-          </div>
-
-          <div class="container">
+          <div class="container mt-2">
             <div class="row">
-              <div class="col-lg-12">
-                <p style="margin-bottom: 10px; text-align: center;"><b>Login Using Mobile Number</b></p>
+              <div class="mb-3">
+                <label for="" class="form-label">Login Using Mobile Number</label>
+                <input type="number" class="form-control" id="" placeholder="Mobile Number">
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <input class="form-control" type="text" placeholder="Mobile Number" aria-label="default input example"
-                  style="width: 250px; margin-bottom: 20px">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-primary" style="margin-bottom: 20px">Send OTP</button> &nbsp;
+              <div class="mt-2 mb-3 text-center">
+                <button type="button" class="btn btn-primary me-2" style="margin-bottom: 20px">Send OTP</button>
                 <button type="button" class="btn btn-secondary" style="margin-bottom: 20px">Resend OTP</button>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <input class="form-control" type="text" placeholder="Enter OTP" aria-label="default input example"
-                  style="width: 250px; margin-bottom: 20px">
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Verify OTP</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
 
+              <div class="row">
+                <div class="mb-3">
+                  <input type="number" class="form-control" id="" placeholder="Enter OTP">
+                </div>
+                <div class="mb-3 text-center">
+                  <button type="button" class="btn btn-primary" style="margin-bottom: 20px">Verify OTP</button>
+                </div>
+                </div>
+          </div>
         </div>
       </div>
     </div>
@@ -92,86 +74,76 @@
 
   <!-- Sub Header -->
   <div class="sub-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-sm-8">
+    <div class="container-fluid px-2 px-xl-5">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-8 col-md-9">
           <div class="left-content">
             <p>
-              A CSR initiative of <a href="https://www.rkcl.in/" target="_blank">RKCL</a>
-              in collaboration with <a href="https://transport.rajasthan.gov.in/content/transportportal/en.html"
-                target="_blank">
-                Department of Transport & Road Safety</a>
-              Rajasthan
+               A CSR initiative of <a href="https://www.rkcl.in" target="_blank">RKCL</a> in collaboration with
+              <a href="https://transport.rajasthan.gov.in/content/transportportal/en.html" target="_blank">Department of Transport &
+                Road Safety</a> Rajasthan
+                
             </p>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-4">
-          <div class="right-icons">
-            <p>
-              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
-              |
-              <a href="hindi.html">हिन्दी</a>
-            </p>
+
+        <div class="col-lg-4 col-md-3 text-center text-md-end">
+          <div class="right-icons d-inline-flex align-items-center">
+              <button type="button" class="btn btn-secondary me-2" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fa-solid fa-right-to-bracket"></i> Log In </button>
+              <a href="hindi.html" class="ms-1"> हिन्दी</a>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
 
   <!-- Navbar Area -->
-  <nav class="navbar container-fluid sticky-top navbar-expand-lg navstyle d-flex justify-content-between">
-    <div class="container">
-      <div class="d-flex">
-        <a href="#" class="navbar-brand">
+  <nav class="navbar sticky-top navstyle navbar-expand-lg navbar-light px-2 px-xl-5 py-lg-0">
+        <a href="home-kidszone.html" class="navbar-brand">
           <img src="assets/images/logos.jpg" height="60" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button type="button" class="navbar-toggler responsive-btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-          <!-- Home -->
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="home-kidszone.html" style="color: #0ea544"><i
-                class="fas fa-home"></i>
-              <br />Home</a>
-          </li>
-          <!-- Learn & Fun -->
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="learn-fun.html" style="color: #ed6f7b"><i
-                class="far fa-lightbulb"></i>
-              <br />Learn & Fun</a>
-          </li>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto ">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home-kidszone.html" style="color: #0ea544"><i class="fas fa-home me-2"></i>Home</a>
+              </li>
+              
+              <!-- Learn & Fun -->
+              <li class="nav-item">
+                <a class="nav-link" href="learn-fun.html" style="color: #ed6f7b"><i class="far fa-lightbulb me-2"></i>Learn & Fun</a>
+              </li>
 
-          <!-- Story Board -->
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="story-board.html" style="color: #04babb"><i
-                class="fas fa-chalkboard"></i>
-              <br />Story Board</a>
-          </li>
+              <!-- Story Board -->
+              <li class="nav-item">
+                <a class="nav-link" href="story-board.html" style="color: #04babb"><i class="fas fa-chalkboard me-2"></i>Story Board</a>
+              </li>
 
-          <!-- Quiz Time -->
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="quiz-time.html" style="color: #ff9d01"><i
-                class="fas fa-question-circle"></i>
-              <br />Quiz
-              Time</a>
-          </li>
+              <!-- Quiz Time -->
+              <li class="nav-item">
+                <a class="nav-link" href="quiz-time.html" style="color: #ff9d01"><i
+                    class="fas fa-question-circle me-2"></i>QuizTime</a>
+              </li>
 
-          <!-- Activities -->
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="activities.html" style="color: #23586a"><i
-                class="fas fa-dice-five"></i>
-              <br />Activities</a>
-          </li>
-        </ul>
+              <!-- Activities -->
+              <li class="nav-item">
+                <a class="nav-link" href="activities.html" style="color: #23586a"><i class="fas fa-dice-five me-2"></i>Activities</a>
+              </li>
+
+              <!-- Grown Up -->
+              <li class="nav-item">
+                <a href="../grown-ups/home-grownups.html"><img src="assets/images/switch-grown.png" height="60" /></a>
+              </li>
+            </ul>
+        </div>
       </div>
       <div>
-        <a href="../grown-ups/home-grownups.html"><img src="assets/images/switch-grown.png" height="60" /></a>
       </div>
-    </div>
   </nav>
 
   <!-- Carousel -->
@@ -188,246 +160,113 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 section-break">
-
-      </div>
-    </div>
-  </div>
-
   <!--Welcome Section -->
-  <div class="container">
+  <div class="container my-5">
     <div class="row">
       <div class="welcome col-lg-12 wow fadeInRight">
         <h4 class="h4maroon">Road Safety Activity</h4>
         <h2 class="h2purple">Find the Mistakes</h2>
         <p>Spot the mistakes in the picture and Mark them.</p>
+        <img src="assets/images/find-the-mistakes.png" class="color-plate">   
       </div>
     </div>
   </div>
 
+    <!-- Footer -->
+<section class="footer">
   <div class="container">
     <div class="row">
-      <div class="welcome col-lg-12">
-        <div class="d-flex justify-content-center">
-          <img src="assets/images/find-the-mistakes.png">          
+      <div class="col-lg-4 col-md-12 text-center text-lg-start">
+        <div class="footer-header">
+          Contact Us
+        </div>
+        <div class="footer-body">
+          <h5>Rajasthan Knowledge Corporation Limited</h5>
+          <p><i class="fas fa-map-marker-alt" style="padding-right: 10px"></i> 7A, Jhalana Institutional Area,
+          <br /><i style="padding-left: 25px"></i>Behind R.T.O, Jaipur - 302004.
+          <br /><i style="padding-left: 25px"></i>(Rajasthan) India.
+          </p>         
+          <p><i class="fas fa-phone-alt" style="padding-right: 10px"></i> 0141-5159700</p>
+          <p><i class="fas fa-globe" style="padding-right: 10px"></i> www.rkcl.in</p>
+          <p><i class="fas fa-envelope" style="padding-right: 10px"></i> info@rkcl.in</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 text-center text-lg-start">
+        <div class="footer-header">
+          Important Links
+        </div>
+        <div class="footer-body">
+          <p>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i> <a href="home-kidszone.html">Home</a></li>
+            <li><i class="fas fa-angle-double-right"></i> <a href="learn-fun.html">Learn & Fun</a></li>
+            <li><i class="fas fa-angle-double-right"></i> <a href="story-board.html">Story Board</a></li>
+            <li><i class="fas fa-angle-double-right"></i> <a href="quiz-time.html">Quiz Time</a></li>
+            <li><i class="fas fa-angle-double-right"></i> <a href="activities.html">Activities</a></li>
+            <li><i class="fas fa-angle-double-right"></i> <a href="downloads.html">Downloads</a></li>
+            <li><i class="fas fa-angle-double-right"></i> <a href="contact-us.html">Contact Us</a></li>
+          </ul>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 text-center text-lg-start">
+        <div class="footer-header">
+          Join Us On
+        </div>
+        <div class="footer-body footer-icons">
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank">
+                <img src="assets/images/icon-facebook.png" height="50">
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <img src="assets/images/icon-twitter.png" height="50">
+              </a>
+              <a href="https://youtube.com" target="_blank">
+                <img src="assets/images/icon-youtube.png" height="50">
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="assets/images/icon-linkedin.png" height="50">
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="assets/images/icon-instagram.png" height="50">
+              </a>
+            </li>
+          </ul>
+          <h5>DOWNLOAD OUR APP</h5>
+          <p>Download Our Android and Apple Mobile Apps.</p>
+          <img src="assets/images/google play_img.png" height="40">
+          <img src="assets/images/app_store_img.png" height="40">
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 section-break">
-      </div>
+<!-- Copyright Area -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="copyright">
+      <p>Copyright © 2021 Rajasthan Knowledge Corporation Limited. All Rights Reserved.
+      </p>
     </div>
   </div>
+</div>
 
- 
-  
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
 
-  <!-- Footer -->
-  <section class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="footer-header">
-            Contact Us
-          </div>
-          <div class="footer-body">
-            <h5>Rajasthan Knowledge Corporation Limited</h5>
-            <p><i class="fas fa-map-marker-alt" style="padding-right: 10px"></i> 7A, Jhalana Institutional Area,
-              <br /><i style="padding-left: 25px"></i>Behind R.T.O, Jaipur - 302004.
-              <br /><i style="padding-left: 25px"></i>(Rajasthan) India.
-            </p>
-            <p><i class="fas fa-phone-alt" style="padding-right: 10px"></i> 0141-5159700</p>
-            <p><i class="fas fa-globe" style="padding-right: 10px"></i> www.rkcl.in</p>
-            <p><i class="fas fa-envelope" style="padding-right: 10px"></i> info@rkcl.in</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="footer-header">
-            Important Links
-          </div>
-          <div class="footer-body">
-            <p>
-            <ul>
-              <li><i class="fas fa-angle-double-right"></i> <a href="home-kidszone.html">Home</a></li>
-              <li><i class="fas fa-angle-double-right"></i> <a href="learn-fun.html">Learn & Fun</a></li>
-              <li><i class="fas fa-angle-double-right"></i> <a href="story-board.html">Story Board</a></li>
-              <li><i class="fas fa-angle-double-right"></i> <a href="quiz-time.html">Quiz Time</a></li>
-              <li><i class="fas fa-angle-double-right"></i> <a href="activities.html">Activities</a></li>
-              <li><i class="fas fa-angle-double-right"></i> <a href="downloads.html">Downloads</a></li>
-              <li><i class="fas fa-angle-double-right"></i> <a href="contact-us.html">Contact Us</a></li>
-            </ul>
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="footer-header">
-            Join Us On
-          </div>
-          <div class="footer-body footer-icons">
-            <ul>
-              <li>
-                <a href="https://facebook.com" target="_blank">
-                  <img src="assets/images/icon-facebook.png" height="50">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                  <img src="assets/images/icon-twitter.png" height="50">
-                </a>
-                <a href="https://youtube.com" target="_blank">
-                  <img src="assets/images/icon-youtube.png" height="50">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                  <img src="assets/images/icon-linkedin.png" height="50">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                  <img src="assets/images/icon-instagram.png" height="50">
-                </a>
-              </li>
-            </ul>
-            <h5>DOWNLOAD OUR APP</h5>
-            <p>Download Our Android and Apple Mobile Apps.</p>
-            <img src="assets/images/google play_img.png" height="40">
-            <img src="assets/images/app_store_img.png" height="40">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/video.js"></script>
+<script src="assets/js/slick-slider.js"></script>
+<script src="assets/js/custom.js"></script>
 
-  <!-- Copyright Area -->
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="copyright">
-        <p>Copyright © 2021 Rajasthan Knowledge Corporation Limited. All Rights Reserved.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/custom.js"></script>
-
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/lightbox.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/video.js"></script>
-  <script src="assets/js/slick-slider.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="https://kit.fontawesome.com/f538c680dc.js" crossorigin="anonymous"></script>
-
-
-  <script>
-    //according to loftblog tut
-    $('.nav li:first').addClass('active');
-
-    var showSection = function showSection(section, isAnimate) {
-      var
-        direction = section.replace(/#/, ''),
-        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-        reqSectionPos = reqSection.offset().top - 0;
-
-      if (isAnimate) {
-        $('body, html').animate({
-          scrollTop: reqSectionPos
-        },
-          800);
-      } else {
-        $('body, html').scrollTop(reqSectionPos);
-      }
-
-    };
-
-    var checkSection = function checkSection() {
-      $('.section').each(function () {
-        var
-          $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var
-            currentId = $this.data('section'),
-            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-          reqLink.closest('li').addClass('active').
-            siblings().removeClass('active');
-        }
-      });
-    };
-
-    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
-      e.preventDefault();
-      showSection($(this).attr('href'), true);
-    });
-
-    $(window).scroll(function () {
-      checkSection();
-    });
-  </script>
-
-  <!-- Script for Sub Menu -->
-  <script type="text/javascript">
-    //	window.addEventListener("resize", function() {
-    //		"use strict"; window.location.reload(); 
-    //	});
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-
-
-      /////// Prevent closing from click inside dropdown
-      document.querySelectorAll('.dropdown-menu').forEach(function (element) {
-        element.addEventListener('click', function (e) {
-          e.stopPropagation();
-        });
-      })
-
-
-
-      // make it as accordion for smaller screens
-      if (window.innerWidth < 992) {
-
-        // close all inner dropdowns when parent is closed
-        document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
-          everydropdown.addEventListener('hidden.bs.dropdown', function () {
-            // after dropdown is hidden, then find all submenus
-            this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
-              // hide every submenu as well
-              everysubmenu.style.display = 'none';
-            });
-          })
-        });
-
-        document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
-          element.addEventListener('click', function (e) {
-
-            let nextEl = this.nextElementSibling;
-            if (nextEl && nextEl.classList.contains('submenu')) {
-              // prevent opening link if link needs to open dropdown
-              e.preventDefault();
-              console.log(nextEl);
-              if (nextEl.style.display == 'block') {
-                nextEl.style.display = 'none';
-              } else {
-                nextEl.style.display = 'block';
-              }
-
-            }
-          });
-        })
-      }
-      // end if innerWidth
-
-    });
-      // DOMContentLoaded  end
-  </script>
 </body>
 
 </html>
